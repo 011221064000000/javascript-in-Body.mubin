@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>
+        javaScript string Objects
+    </h2>
+    <P>
+        Never create strings as objects.
+    </P>
+    <p>
+        Strings and objects cannot be safely
+        compared.
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = "John";
+        let y = new String("Jhon");
+        document.getElementById("demo").innerHTML = (x === y);
+    </script>
+</body>
+</html>
