@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+         src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>   
+        <script>
+         $(document).ready(function(){
+            $("#myInput").on("keyup",function(){
+                var value = $(this).val().toLowerCase();
+                $("#myList li").filter(function() {
+
+
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+
+                });
+            });
+         </script>
+    </head>
+    <body>
+
+        <h2>
+            eid marketing List
+        </h2>
+        <p>Type something in the in the input field to search 
+            the list for specific items:
+        </p>
+        <input id="myInput" type="text"
+        placeholder="Search..">
+        <br>
+
+        <ul id="mylist">
+            <li>1st item= ganji</li>
+            <li>Second item= pant</li>
+            <li>Third item= t-shirt</li>
+            <li>4th item= panjabi</li>
+            <li>5th item= w8ing </li>
+        </ul>
+    </body>
+</html>
