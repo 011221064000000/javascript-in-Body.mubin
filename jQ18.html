@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+         $(document).ready(function(){
+            $("button").click(function(){
+                alert("Background color = " +
+            $("p").css("background-color"));    
+            });
+         });
+         </script>
+    </head>
+    <body>
+
+        <h2>I am the boss</h2>
+
+        <p style="background-color:#ff0000">I am the boss.</p>
+        <p style="background-color:#00ff00">I am the boss.</p>
+        <p style="background-color:#0000ff">I am the boss.</p>
+
+        <button>Return background-color of p</button>
+    </body>
+</html>
