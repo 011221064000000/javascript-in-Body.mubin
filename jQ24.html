@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .siblings * {
+                display: block;
+                border: 10px solid blue;
+                color: blue;
+                padding: 20px;
+                margin: 30px;
+            }
+        </style>
+        <script>
+            src="httpss://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $("h2").siblings().css({"color": "blue",
+                "border": "10px soild blue"});
+                });
+            </script>   
+    </head>
+    <body class="siblings">
+        <div>div (parent)
+           <p>I love you</p>
+           <span>I love coding</span>
+           <h2>I love ajax</h2>
+           <h3>I love jquery</h3>
+           <p>I love you</p>
+        </div>
+    </body>
+    </html>
