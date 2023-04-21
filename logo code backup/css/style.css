@@ -1,0 +1,10 @@
+
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image:
+url('../img/new/imagel.jpg');
+   min-height: 100%;
+   background-postion: center;
+   background-size: cover;    
+}
